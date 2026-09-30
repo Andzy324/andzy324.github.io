@@ -10,7 +10,7 @@ export default [
       { name: 'Benjamin Busam' }, { name: 'Slobodan Ilic' }
     ],
     collaborators: [{ people: [{ name: 'Hongli Xu' }, { name: 'Jiaqi Hu', url: 'https://de.linkedin.com/in/jiaqihu0511' }], organization: 'TUM CAMP · joint first authors' }],
-    mentors: [{ people: [{ name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }, { name: 'Nassir Navab', url: 'https://www.professoren.tum.de/en/navab-nassir' }], organization: 'TUM CAMP · mentors and faculty coauthors' }],
+    mentors: [{ people: [{ name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }, { name: 'Nassir Navab', url: 'https://www.professoren.tum.de/en/navab-nassir' }], organization: 'TUM CAMP · mentors and faculty coauthors' }],
     summary: 'PANY estimates the 6D pose of unseen objects from one or sparse arbitrary RGB or RGB-D references. Its multi-view geometry backbone and pose-graph registration aggregate unposed assist views to improve robustness under occlusion and wide viewpoint changes.',
     links: [{ type: 'arxiv', url: 'https://arxiv.org/abs/2606.23634', label: 'Read the PANY preprint', external: true }, { type: 'project', url: 'https://demianhj.github.io/PANY/', label: 'Visit the PANY project website', external: true }]
   },

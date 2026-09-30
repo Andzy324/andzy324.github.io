@@ -22,7 +22,7 @@ export default [
     type: 'Research Collaboration · TUM CAMP', area: 'perception',
     logos: [{ src: '/assets/logos/tum-camp.png', width: 774, height: 435, alt: 'TUM CAMP logo' }],
     collaborators: [{ people: [{ name: 'Hongli Xu' }, { name: 'Jiaqi Hu', url: 'https://de.linkedin.com/in/jiaqihu0511' }], organization: 'TUM CAMP' }],
-    mentors: [{ people: [{ name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }], organization: 'TUM CAMP' }],
+    mentors: [{ people: [{ name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }], organization: 'TUM CAMP' }],
     contributions: [
       'Contributed to <a href="#pose-anything-anywhere">Pose Anything Anywhere (PANY)</a> during its 2026 submission phase, advancing open-world, model-free 6D pose research.',
       'Worked on <a href="#ov-nocs">OV-NOCs</a> in parallel through March 2026, focusing on 3D assets and the data annotation pipeline for canonicalized object representations.'
