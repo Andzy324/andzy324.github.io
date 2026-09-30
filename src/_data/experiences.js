@@ -7,14 +7,13 @@ export default [
     contributions: ['Developing contact-aware video generation and world action models for contact-rich robotic manipulation.', 'Investigating 3D motion and contact representations for physically consistent interaction prediction.']
   },
   {
-    id: 'tum-masters-thesis', title: 'Articulated Interaction in Explorable Generative Worlds', date: 'Ongoing · due Mar 2027',
+    id: 'tum-masters-thesis', title: 'Interactive World Models for Understanding and Manipulating Articulated Objects', date: 'Ongoing · due Mar 2027',
     type: 'Master’s Thesis · TUM Computer Vision Group', area: 'generation',
     logos: [{ src: '/assets/logos/tum-cvg.png', width: 720, height: 121, alt: 'TUM Computer Vision Group mark' }, { src: '/assets/logos/tum.svg', width: 408, height: 212, alt: 'Technical University of Munich logo' }],
     mentors: [{ people: [{ name: 'Xi Wang', url: 'https://xiwang1212.github.io/homepage/' }, { name: 'Daniel Cremers', url: 'https://cvg.cit.tum.de/members/cremers' }], organization: 'TUM Computer Vision Group' }],
     contributions: [
       'Investigating how scene-level world models can support controllable interaction with articulated objects through object-level articulation reasoning and interaction video generation.',
-      'Exploring structured 3D articulation and motion guidance; evaluating motion quality, appearance preservation, and scene consistency.',
-      'See the <a href="https://portal.cit.tum.de/en/Theses/Verify/436af9ccf5aba10118561eee6cbc059f76e515126d98062e45d88ae359ce2a50">TUM thesis registration</a>.'
+      'Exploring structured 3D articulation and motion guidance; evaluating motion quality, appearance preservation, and scene consistency.'
     ]
   },
   {
