@@ -5,7 +5,7 @@ export default [
     summary: 'Explored a shared canonical pose convention and shape representation across object categories. I worked on 3D asset preparation and the data annotation pipeline supporting a large-scale canonicalized object dataset.',
     media: { src: '/assets/logos/tum-camp.png', width: 774, height: 435, alt: 'TUM CAMP logo' },
     links: [{ type: 'project', url: '/#camp-research', label: 'View CAMP experience' }],
-    collaborators: [{ people: [{ name: 'Hongli Xu' }, { name: 'Jiaqi Hu', url: 'https://de.linkedin.com/in/jiaqihu0511' }], organization: 'TUM CAMP' }],
+    collaborators: [{ people: [{ name: 'Hongli Xu' }], organization: 'TUM CAMP' }],
     mentors: [{ people: [{ name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }], organization: 'TUM CAMP' }]
   },
   {
