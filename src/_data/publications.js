@@ -96,7 +96,6 @@ export default [
     ],
     shortAuthors: 'Maijunxian Wang, Ruisi Wang, Juyi Lin, …, <strong><u>Boyang Zhong</u></strong>, et al.',
     collaborators: [{ people: [{ name: 'Hokin Deng', url: 'https://hokindeng.com/' }], organization: 'VBVR collaboration' }],
-    mentors: [{ people: [{ name: 'Nuno Vasconcelos', url: 'https://vision.ucsd.edu/people/vasconcelos' }, { name: 'Daniel Khashabi', url: 'https://engineering.jhu.edu/faculty/daniel-khashabi/' }, { name: 'Alan Yuille', url: 'https://www.cs.jhu.edu/faculty/alan-yuille/' }, { name: 'Dahua Lin', url: 'https://research.cuhk.edu.hk/en/persons/dahua-lin/' }, { name: 'Ziwei Liu', url: 'https://www.ntu.edu.sg/computing/research/institutes-centres/grail/our-people' }], organization: 'Faculty coauthors' }],
     summary: 'VBVR introduces a large-scale video reasoning suite with 200 curated tasks and over one million clips. Its rule-based, human-aligned benchmark provides verifiable evaluation of temporal, spatial, and causal reasoning in video models.',
     links: [
       { type: 'paper', url: 'https://proceedings.mlr.press/v306/wang26ia.html', label: 'Read the ICML paper', external: true },
