@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build-and-deploy:
     env:
-      SITE_URL: https://${{ github.repository_owner }}.github.io
+      SITE_URL: https://andzy324.github.io
       PATH_PREFIX: /
     environment:
       name: github-pages

@@ -2,7 +2,7 @@
 <section class="home-section home-section--hero" id="{{ section.id }}" aria-labelledby="home-title">
   <header class="home-section__header section-table hero-name-table">
     <div class="hero-name-cell">
-      <h1 class="hero-name-line site-name type-page-title" id="home-title">{{ site.owner.name }}</h1>
+      <h1 class="hero-name-line site-name type-page-title" id="home-title"><span class="hero-name-english">Boyang <em>Zhong</em></span><span class="hero-name-divider" aria-hidden="true"></span><span class="hero-name-chinese" lang="zh">钟伯扬</span></h1>
     </div>
   </header>
 
@@ -12,6 +12,7 @@
         <p class="type-body">{{ paragraph | safe }}</p>
       {% endfor %}
       {% if section.content.highlight %}<p class="hero-highlight type-body type-body--emphasis">{{ section.content.highlight | safe }}</p>{% endif %}
+      {% if section.content.previous %}<p class="type-body">{{ section.content.previous | safe }}</p>{% endif %}
       {% if section.content.note %}<p class="hero-note type-caption">{{ section.content.note | safe }}</p>{% endif %}
     </div>
     <div class="hero-media-cell">

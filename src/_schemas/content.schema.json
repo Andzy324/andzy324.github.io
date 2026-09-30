@@ -12,6 +12,7 @@
         "height": { "type": "integer", "minimum": 1 },
         "alt": { "type": "string", "minLength": 1 },
         "className": { "type": "string" },
+        "label": { "type": "string", "minLength": 1 },
         "type": { "enum": ["image", "video"] },
         "poster": { "type": "string" }
       },
@@ -52,6 +53,7 @@
           "items": { "type": "string", "minLength": 1 }
         },
         "highlight": { "type": "string", "minLength": 1 },
+        "previous": { "type": "string", "minLength": 1 },
         "note": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false

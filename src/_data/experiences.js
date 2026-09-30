@@ -39,7 +39,7 @@ export default [
   {
     id: 'video-captioning', title: 'Enhancing Video Captioning via Reinforcement Learning', date: 'Nov 2024 – Jun 2025',
     type: 'Guided Research · Tresp Lab, LMU Munich', area: 'generation',
-    logos: [{ src: '/assets/logos/tresp-lab.png', width: 464, height: 480, alt: 'TRESP Lab logo' }, { src: '/assets/logos/lmu.svg', width: 760, height: 398, alt: 'LMU Munich logo' }],
+    logos: [{ src: '/assets/logos/tresp-lab.png', width: 464, height: 480, alt: 'TRESP Lab logo', label: 'TRESP Lab' }, { src: '/assets/logos/lmu.svg', width: 760, height: 398, alt: 'LMU Munich logo' }],
     mentors: [{ people: [{ name: 'Ruotong Liao', url: 'https://mayhugotong.github.io/' }], organization: 'TRESP Lab, LMU Munich' }],
     contributions: ['Designed a composite reward for temporal alignment, linguistic fidelity, and brevity in <a href="#video-captioning-project">highlight-aware video captioning</a>.', 'Compared UVCOM/Lighthouse temporal predictors, clause-level aggregation, and GRPO versus DAPO training on QVHighlights.']
   },

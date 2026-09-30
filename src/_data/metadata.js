@@ -32,6 +32,7 @@ export default {
         "@type": "Person",
         "@id": profileId,
         name: site.owner.name,
+        alternateName: site.owner.alternateNames,
         email: `mailto:${site.owner.email}`,
         image: `${site.url}${prefixedPath(site.owner.portrait.src)}`,
         sameAs: site.social

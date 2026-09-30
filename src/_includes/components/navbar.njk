@@ -17,7 +17,7 @@
       {% for item in homepage.sections %}
         {% if item.enabled and item.hasContent and item.navigation %}
           <a href="#{{ item.id }}">
-            <span class="nav-link-chip"><span class="nav-link-label">{{ item.title }}</span></span>
+            <span class="nav-link-chip"><span class="nav-link-label">{{ item.navLabel or item.title }}</span></span>
           </a>
         {% endif %}
       {% endfor %}

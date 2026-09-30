@@ -9,8 +9,6 @@ export default [
       { name: 'Boyang Zhong', featured: true }, { name: 'Peter K. T. Yu' }, { name: 'Nassir Navab' },
       { name: 'Benjamin Busam' }, { name: 'Slobodan Ilic' }
     ],
-    collaborators: [{ people: [{ name: 'Hongli Xu' }, { name: 'Jiaqi Hu', url: 'https://de.linkedin.com/in/jiaqihu0511' }], organization: 'TUM CAMP · joint first authors' }],
-    mentors: [{ people: [{ name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }, { name: 'Nassir Navab', url: 'https://www.professoren.tum.de/en/navab-nassir' }], organization: 'TUM CAMP · mentors and faculty coauthors' }],
     summary: 'PANY estimates the 6D pose of unseen objects from one or sparse arbitrary RGB or RGB-D references. Its multi-view geometry backbone and pose-graph registration aggregate unposed assist views to improve robustness under occlusion and wide viewpoint changes.',
     links: [{ type: 'arxiv', url: 'https://arxiv.org/abs/2606.23634', label: 'Read the PANY preprint', external: true }, { type: 'project', url: 'https://demianhj.github.io/PANY/', label: 'Visit the PANY project website', external: true }]
   },
@@ -24,8 +22,6 @@ export default [
       { name: 'Boyang Zhong', featured: true }, { name: 'Kaixin Bai' }, { name: 'Zoltán-Csaba Márton' },
       { name: 'Zhenshan Bing' }, { name: 'Zhaopeng Chen' }, { name: 'Alois Christian Knoll' }, { name: 'Jianwei Zhang' }
     ],
-    collaborators: [{ people: [{ name: 'Hongli Xu' }, { name: 'Lei Zhang' }, { name: 'Xiaoyue Hu' }], organization: 'Joint first authors' }],
-    mentors: [{ people: [{ name: 'Zhenshan Bing', url: 'https://www.ce.cit.tum.de/en/air/people/zhenshan-bing-prof-drrernat/' }, { name: 'Alois Christian Knoll', url: 'https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/' }, { name: 'Jianwei Zhang', url: 'https://tams.informatik.uni-hamburg.de/people/zhang/index.php' }], organization: 'TUM / University of Hamburg' }],
     summary: 'FUNCanon decomposes long-horizon manipulation into actor–verb–object action chunks. Affordance-guided functional canonicalization aligns objects into shared functional frames, allowing pose-aware action primitives to transfer across object categories and tasks.',
     links: [
       { type: 'arxiv', url: 'https://arxiv.org/abs/2509.19102', label: 'Read the preprint', external: true },
@@ -95,7 +91,6 @@ export default [
       { name: 'Hokin Deng' }
     ],
     shortAuthors: 'Maijunxian Wang, Ruisi Wang, Juyi Lin, …, <strong><u>Boyang Zhong</u></strong>, et al.',
-    collaborators: [{ people: [{ name: 'Hokin Deng', url: 'https://hokindeng.com/' }], organization: 'VBVR collaboration' }],
     summary: 'VBVR introduces a large-scale video reasoning suite with 200 curated tasks and over one million clips. Its rule-based, human-aligned benchmark provides verifiable evaluation of temporal, spatial, and causal reasoning in video models.',
     links: [
       { type: 'paper', url: 'https://proceedings.mlr.press/v306/wang26ia.html', label: 'Read the ICML paper', external: true },

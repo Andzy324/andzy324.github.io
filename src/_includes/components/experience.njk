@@ -3,8 +3,9 @@
   <div class="entry-media-cell">
     <div class="experience-logo-stack">
       {% for logo in experience.logos %}
-        <div class="experience-logo-card">
+        <div class="experience-logo-card{% if logo.label %} experience-logo-card--labeled{% endif %}">
           <img src="{{ logo.src | sitePath }}" width="{{ logo.width }}" height="{{ logo.height }}" loading="lazy" decoding="async" alt="{{ logo.alt }}" class="{{ logo.className or '' }}">
+          {% if logo.label %}<strong class="experience-logo-label">{{ logo.label }}</strong>{% endif %}
         </div>
       {% endfor %}
     </div>

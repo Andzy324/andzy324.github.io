@@ -4,6 +4,10 @@
   --entry-media-aspect-ratio: 16 / 10;
 }
 
+.home-section--publications {
+  --entry-media-aspect-ratio: 5 / 4;
+}
+
 .home-section__header {
   display: block;
 }
@@ -314,6 +318,33 @@ ul, li {
   text-align: center;
 }
 
+.hero-name-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 16px;
+  letter-spacing: -0.025em;
+}
+
+.hero-name-english em {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.hero-name-divider {
+  align-self: center;
+  width: 1px;
+  height: 0.9em;
+  background: #b1c3d3;
+}
+
+.hero-name-chinese {
+  color: #3e6487;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
 @media (min-width: 901px) {
   .hero-bio-cell {
     display: flex;
@@ -484,6 +515,22 @@ ul, li {
   object-fit: contain;
   object-position: center center;
 }
+.experience-logo-card--labeled {
+  gap: 12px;
+  aspect-ratio: auto;
+  min-height: 80px;
+}
+.experience-logo-card--labeled img {
+  flex: 0 0 70px;
+  width: 70px !important;
+  height: 70px !important;
+}
+.experience-logo-label {
+  color: #243c55;
+  font-size: 1.08rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
 .earlier-experiences {
   margin-top: 32px;
 }
@@ -618,10 +665,14 @@ ul, li {
 
   .hero-name-line,
   .hero-name-line .site-name {
-    display: block;
     width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
+  }
+
+  .hero-name-line {
+    flex-wrap: wrap;
+    gap: 6px 12px;
   }
 
   .hero-name-line .name-ruby rt,

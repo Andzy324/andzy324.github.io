@@ -12,12 +12,12 @@ export default {
   pathPrefix,
   title: "Boyang Zhong",
   description:
-    "Research in embodied AI, 3D vision, world models, and robotic manipulation.",
+    "Boyang Zhong is an M.Sc. researcher at TUM working on 3D vision, embodied AI, generative world models, and robotic manipulation.",
   language: "en",
   updated: buildDate,
   owner: {
     name: "Boyang Zhong",
-    alternateNames: [],
+    alternateNames: ["钟伯扬"],
     email: "boyang.zhong@tum.de",
     portrait: {
       src: "/assets/profile-linkedin.png",

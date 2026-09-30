@@ -210,6 +210,10 @@ body {
   object-fit: contain;
   object-position: center center;
 }
+.publication-entry .entry-visual {
+  border-radius: 12px;
+  background: #f0f4f8;
+}
 .entry-byline {
   --type-secondary-color: #4a5b6d;
   max-width: 760px;
