@@ -91,10 +91,6 @@ body {
   width: 100%;
   max-width: 280px;
 }
-.publication-entry,
-#video-captioning-project {
-  grid-template-columns: minmax(0, 34fr) minmax(0, 66fr);
-}
 .publication-entry .entry-visual-stack,
 #video-captioning-project .entry-visual-stack {
   width: min(100%, 330px);
