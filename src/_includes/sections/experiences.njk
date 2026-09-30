@@ -1,0 +1,21 @@
+{% import "components/ui.njk" as ui with context %}
+<section class="home-section home-section--experiences" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+  {{ ui.sectionHeading(section.id + "-title", section.title) }}
+  {% for experience in section.content %}{% if experience.area %}{% include "components/experience.njk" %}{% endif %}{% endfor %}
+  <section class="earlier-experiences" aria-labelledby="earlier-experiences-title">
+    <h3 class="earlier-experiences-title" id="earlier-experiences-title">Earlier Experience</h3>
+    {% for experience in section.content %}{% if not experience.area %}
+      <article class="earlier-experience" id="{{ experience.id }}">
+        <div class="earlier-experience-logo">
+          {% set logo = experience.logos[0] %}
+          <img src="{{ logo.src | sitePath }}" width="{{ logo.width }}" height="{{ logo.height }}" loading="lazy" decoding="async" alt="{{ logo.alt }}">
+        </div>
+        <div>
+          <div class="earlier-experience-heading"><h4>{{ experience.title }}</h4><span>{{ experience.date }}</span></div>
+          <p class="earlier-experience-type">{{ experience.type }}</p>
+          <p class="earlier-experience-summary">{{ experience.contributions[0] | safe }}</p>
+        </div>
+      </article>
+    {% endif %}{% endfor %}
+  </section>
+</section>

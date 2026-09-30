@@ -1,0 +1,26 @@
+<nav class="navbar" aria-label="{{ site.labels.primaryNavigation }}"{% if site.features.liquidGlassNavigation %} data-site-glass-nav data-site-glass data-site-glass-id="site-nav-glass" data-radius="0" data-scale="-115" data-r-offset="0" data-g-offset="6" data-b-offset="12" data-blur="18" data-frost="0.04" data-backdrop-blur="10" data-saturate="1.22" data-border="0.08" data-edge="0.13"{% endif %}>
+  <div class="navbar-container">
+    <a class="navbar-brand" href="#top" aria-label="{{ site.owner.name }} home">
+      <span class="navbar-brand-name">{{ site.owner.name }}</span>
+    </a>
+    <button class="navbar-toggle" type="button" aria-label="{{ site.labels.openNavigation }}" data-open-label="{{ site.labels.openNavigation }}" data-close-label="{{ site.labels.closeNavigation }}" aria-controls="site-nav" aria-expanded="false">
+      <span class="navbar-toggle-lines" aria-hidden="true"></span>
+    </button>
+    <div id="site-nav" class="navbar-links">
+      {% for item in site.utilityLinks %}
+        {% if item.url %}
+          <a href="{{ item.url | sitePath }}" {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            <span class="nav-link-chip"><span class="nav-link-label">{{ item.label }}</span></span>
+          </a>
+        {% endif %}
+      {% endfor %}
+      {% for item in homepage.sections %}
+        {% if item.enabled and item.hasContent and item.navigation %}
+          <a href="#{{ item.id }}">
+            <span class="nav-link-chip"><span class="nav-link-label">{{ item.title }}</span></span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</nav>

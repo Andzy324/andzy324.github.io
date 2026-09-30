@@ -1,0 +1,16 @@
+{% import "components/ui.njk" as ui with context %}
+<section class="home-section home-section--research section-table" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+  <div class="section-cell">
+    <div class="research-interests-panel">
+      <header class="home-section__header"><h2 class="semantic-heading section-heading type-section-title" id="{{ section.id }}-title">{{ section.title }}</h2></header>
+      <ol class="research-trajectory">
+        {% for step in section.trajectory %}
+          <li><h3 class="research-trajectory-title">{{ step.phase }}</h3><p class="type-body">{{ step.description }}</p></li>
+        {% endfor %}
+      </ol>
+      <div class="research-tags" id="research-tags" role="list" aria-label="Research interest areas">
+        {% for area in section.content %}{{ ui.researchTag(area.id, section.content, true) }}{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<article class="home-entry home-entry--education section-table experience-entry education-entry" id="education-{{ item.id }}">
+  <div class="entry-media-cell">
+    <div class="experience-logo-stack"><div class="experience-logo-card"><img src="{{ item.logo.src | sitePath }}" width="{{ item.logo.width }}" height="{{ item.logo.height }}" loading="lazy" decoding="async" alt="{{ item.logo.alt }}"></div></div>
+  </div>
+  <div class="entry-content-cell">
+    <p class="education-mobile-line type-body type-body--emphasis">{{ item.degree }}</p>
+    <div class="split-row"><h3 class="entry-title type-entry-title">{{ item.institution }}</h3><span class="text-right experience-side-meta"><span class="entry-meta type-meta">{{ item.date }}</span></span></div>
+    <p class="education-degree type-body type-body--emphasis">{{ item.degree }}</p>
+    <p class="education-note type-body">{{ item.note | safe }}</p>
+  </div>
+</article>

@@ -1,0 +1,20 @@
+# macOS filesystem metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+
+# Local JavaScript dependencies
+node_modules/
+_site/
+public/assets/generated/
+.cache/
+playwright-report/
+test-results/
+.playwright-cli/
+output/
+
+# Local source media archives (optimized derivatives are published)
+assets/photograph/originals/

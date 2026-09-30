@@ -1,0 +1,38 @@
+{% import "components/ui.njk" as ui with context %}
+<section class="home-section home-section--hero" id="{{ section.id }}" aria-labelledby="home-title">
+  <header class="home-section__header section-table hero-name-table">
+    <div class="hero-name-cell">
+      <h1 class="hero-name-line site-name type-page-title" id="home-title">{{ site.owner.name }}</h1>
+    </div>
+  </header>
+
+  <div class="section-table hero-intro-table">
+    <div class="hero-bio-cell">
+      {% for paragraph in section.content.bio %}
+        <p class="type-body">{{ paragraph | safe }}</p>
+      {% endfor %}
+      {% if section.content.highlight %}<p class="hero-highlight type-body type-body--emphasis">{{ section.content.highlight | safe }}</p>{% endif %}
+      {% if section.content.note %}<p class="hero-note type-caption">{{ section.content.note | safe }}</p>{% endif %}
+    </div>
+    <div class="hero-media-cell">
+      <div class="hero-media-layout">
+        <div class="hero-media-row">
+          <figure class="profile-portrait">{{ ui.image(site.owner.portrait, true, "profile-portrait-image") }}</figure>
+        </div>
+        <div class="avatar-icons" id="avatar-icons" role="group" aria-label="{{ site.labels.profileResources }}">
+          {% for link in site.social %}
+            {% if link.url %}
+              <a class="avatar-resource avatar-resource--link" href="{{ link.url | sitePath }}" aria-label="{{ link.label }}" title="{{ link.label }}" {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                <img src="{{ link.icon | sitePath }}" alt="" width="28" height="28" decoding="async">
+              </a>
+            {% else %}
+              <span class="avatar-resource avatar-resource--static" title="{{ link.label }}">
+                <img src="{{ link.icon | sitePath }}" alt="{{ link.label }}" width="28" height="28" decoding="async">
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

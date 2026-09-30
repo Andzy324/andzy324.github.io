@@ -1,0 +1,5 @@
+{% import "components/ui.njk" as ui with context %}
+<section class="home-section home-section--publications" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+  {{ ui.sectionHeading(section.id + "-title", section.title, "* equal contribution, † corresponding author") }}
+  {% for publication in section.content %}{% include "components/publication.njk" %}{% endfor %}
+</section>

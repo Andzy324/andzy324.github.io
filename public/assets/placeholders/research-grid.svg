@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
+  <title id="title">Abstract structured visual learning grid</title>
+  <rect width="1280" height="720" fill="#172125"/>
+  <g stroke="#6f8588" stroke-width="2" opacity=".5">
+    <path d="M80 120h1120M80 240h1120M80 360h1120M80 480h1120M80 600h1120"/>
+    <path d="M160 70v580M360 70v580M560 70v580M760 70v580M960 70v580M1160 70v580"/>
+  </g>
+  <g fill="#e2b34f"><circle cx="360" cy="240" r="32"/><circle cx="760" cy="360" r="44"/><circle cx="960" cy="480" r="26"/></g>
+  <path d="m360 240 400 120 200 120" fill="none" stroke="#f4efe2" stroke-width="12"/>
+</svg>

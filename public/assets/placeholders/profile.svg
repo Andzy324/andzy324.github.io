@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract sample profile portrait</title>
+  <desc id="desc">Geometric circles and lines used as a non-personal profile placeholder.</desc>
+  <rect width="900" height="900" fill="#d8d4c8"/>
+  <circle cx="450" cy="330" r="150" fill="#253238"/>
+  <path d="M170 860c22-225 128-338 280-338s258 113 280 338" fill="#465b62"/>
+  <circle cx="680" cy="170" r="82" fill="#d69f3c"/>
+  <path d="M90 110h220M90 145h145M590 740h220M665 775h145" stroke="#f7f4ea" stroke-width="18"/>
+</svg>

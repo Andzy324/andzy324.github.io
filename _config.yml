@@ -1,0 +1,21 @@
+exclude:
+  - .github
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - NOTICE.md
+  - README.md
+  - SECURITY.md
+  - THIRD_PARTY_NOTICES.md
+  - docs
+  - eleventy.config.js
+  - eslint.config.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - playwright.config.js
+  - public
+  - scripts
+  - src
+  - tests
+  - _site

@@ -1,0 +1,72 @@
+{% macro sectionHeading(id, title, note="") %}
+  <header class="home-section__header section-cell">
+    <h2 class="semantic-heading section-heading type-section-title" id="{{ id }}">{{ title }}</h2>
+    {% if note %}<p class="publication-note type-caption">{{ note }}</p>{% endif %}
+  </header>
+{% endmacro %}
+
+{% macro entryGroupLabel(title) %}
+  <h4 class="entry-label type-group-label">{{ title }}</h4>
+{% endmacro %}
+
+{% macro researchTag(areaId, areas, interest=false) %}
+  {% for area in areas %}
+    {% if area.id == areaId %}
+      <span class="{{ 'research-interest-tag' if interest else 'tag' }} tag-domain-{{ area.theme }} type-tag" {% if interest %}role="listitem"{% endif %}>{{ area.label }}</span>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro image(media, eager=false, extraClass="") %}
+  <img
+    src="{{ media.src | sitePath }}"
+    {% if media.srcset %}srcset="{{ media.srcset | siteSrcset }}" sizes="(max-width: 900px) 260px, 220px"{% endif %}
+    width="{{ media.width }}"
+    height="{{ media.height }}"
+    alt="{{ media.alt }}"
+    class="{{ extraClass }}"
+    loading="{{ 'eager' if eager else 'lazy' }}"
+    decoding="async"
+    {% if eager %}fetchpriority="high"{% endif %}>
+{% endmacro %}
+
+{% macro resourceLinks(links, site, label="Resources") %}
+  {% if links and links.length %}
+    <div class="entry-links" role="group" aria-label="{{ label }}">
+      {% for link in links %}
+        {% set resource = site.resourceTypes[link.type] %}
+        <a href="{{ link.url | sitePath }}"
+          aria-label="{{ link.label or resource.label }}"
+          title="{{ link.label or resource.label }}"
+          {% if link.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+          <img
+            src="{{ resource.icon | sitePath }}"
+            width="24"
+            height="24"
+            class="meta-icon {{ resource.className or '' }}"
+            decoding="async"
+            alt="">
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro authors(items) %}
+  <div class="entry-byline type-secondary">
+    {% for author in items %}
+      {% if author.lineBreakBefore %}<br>{% endif %}
+      {% if author.featured %}<strong><u>{{ author.name }}</u></strong>{% else %}{{ author.name }}{% endif %}{% if author.equal %}*{% endif %}{% if author.corresponding %}†{% endif %}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro mediaStack(items) %}
+  <div class="entry-visual-stack">
+    {% for media in items %}
+      <div class="entry-visual {{ media.className or '' }}">
+        {{ image(media, false, "teaser-img") }}
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}

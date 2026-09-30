@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" data-path-prefix="{{ site.pathPrefix }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{{ site.owner.name }}">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="{{ project.details.claim }}">
+  <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:title" content="{{ project.title }} | {{ site.owner.name }}">
+  <meta property="og:description" content="{{ project.details.claim }}">
+  <meta property="og:image" content="{{ project.details.cover.src | absoluteUrl(site.url) }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>{{ project.title }} | {{ site.owner.name }}</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ 'project.css' | asset }}">
+</head>
+<body>
+  <a class="project-skip-link" href="#project-content">{{ site.labels.skipToContent }}</a>
+  <nav class="project-nav" aria-label="{{ site.labels.primaryNavigation }}">
+    <a href="{{ '/' | sitePath }}">{{ site.labels.backHome }}</a>
+  </nav>
+  <header class="project-hero">
+    <p class="project-eyebrow">{{ project.details.eyebrow }}</p>
+    <h1>{{ project.title }}</h1>
+    <p class="project-claim">{{ project.details.claim }}</p>
+    <p class="project-authors">
+      {%- for author in project.details.authors -%}
+        {% if not loop.first %}, {% endif -%}
+        {% if author.url %}<a href="{{ author.url }}"{% if author.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{% endif -%}
+        {% if author.featured %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif -%}
+        {% if author.url %}</a>{% endif -%}
+      {%- endfor -%}
+    </p>
+    {% if project.links.length %}
+      <div class="project-actions" role="group" aria-label="{{ project.title }} resources">
+        {% for link in project.links %}
+          {% if link.url != page.url %}
+            {% set resource = site.resourceTypes[link.type] %}
+            <a class="project-button" href="{{ link.url | sitePath }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label or resource.label }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+  <main class="project-shell" id="project-content">
+    <figure class="project-cover">
+      <img src="{{ project.details.cover.src | sitePath }}" width="{{ project.details.cover.width }}" height="{{ project.details.cover.height }}" alt="{{ project.details.cover.alt }}">
+    </figure>
+    {{ content | safe }}
+  </main>
+  <footer class="project-footer"><a href="{{ '/' | sitePath }}">{{ site.title }}</a></footer>
+</body>
+</html>

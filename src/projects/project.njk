@@ -1,0 +1,35 @@
+---
+layout: project.njk
+pagination:
+  data: projectPages
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.id }}/index.html"
+eleventyExcludeFromCollections: true
+---
+{% for detailSection in project.details.sections %}
+  <section class="project-section" id="{{ detailSection.id }}" aria-labelledby="{{ detailSection.id }}-title">
+    <div class="project-section-copy">
+      <p class="project-section-index">{{ "0" if loop.index < 10 }}{{ loop.index }}</p>
+      <div>
+        <h2 id="{{ detailSection.id }}-title">{{ detailSection.title }}</h2>
+        {% for paragraph in detailSection.body %}<p>{{ paragraph }}</p>{% endfor %}
+      </div>
+    </div>
+    {% if detailSection.media %}
+      <figure class="project-media">
+        <img src="{{ detailSection.media.src | sitePath }}" width="{{ detailSection.media.width }}" height="{{ detailSection.media.height }}" loading="lazy" decoding="async" alt="{{ detailSection.media.alt }}">
+      </figure>
+    {% endif %}
+    {% if detailSection.gallery %}
+      <div class="project-gallery">
+        {% for item in detailSection.gallery %}
+          <figure class="project-gallery-item">
+            <figcaption>{{ item.title }}</figcaption>
+            <img src="{{ item.media.src | sitePath }}" width="{{ item.media.width }}" height="{{ item.media.height }}" loading="lazy" decoding="async" alt="{{ item.media.alt }}">
+          </figure>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+{% endfor %}

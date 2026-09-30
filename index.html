@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-pages-configuration-error>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>GitHub Pages setup required</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family:
+          ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        background: #f1f0eb;
+        color: #171914;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: clamp(1.25rem, 5vw, 4rem);
+      }
+
+      main {
+        width: min(100%, 46rem);
+        border-top: 0.35rem solid #c4492d;
+        background: #fffef9;
+        box-shadow: 0 1.25rem 3.5rem rgb(37 39 31 / 12%);
+        padding: clamp(1.5rem, 5vw, 3.5rem);
+      }
+
+      .status {
+        margin: 0 0 1rem;
+        color: #9d331d;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 16ch;
+        margin: 0;
+        font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+        font-size: clamp(2rem, 7vw, 4.5rem);
+        font-weight: 500;
+        letter-spacing: -0.045em;
+        line-height: 0.98;
+      }
+
+      .summary {
+        max-width: 60ch;
+        margin: 1.5rem 0 0;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: clamp(1rem, 2vw, 1.15rem);
+        line-height: 1.65;
+      }
+
+      ol {
+        margin: 2rem 0;
+        padding-left: 1.5rem;
+        line-height: 1.75;
+      }
+
+      li + li {
+        margin-top: 0.6rem;
+      }
+
+      strong {
+        font-weight: 750;
+      }
+
+      a {
+        color: #8b2b17;
+        text-underline-offset: 0.2em;
+        text-decoration-thickness: 0.12em;
+      }
+
+      a:hover {
+        color: #54190c;
+      }
+
+      a:focus-visible {
+        outline: 0.2rem solid #c4492d;
+        outline-offset: 0.25rem;
+      }
+
+      .note {
+        margin: 0;
+        border-left: 0.2rem solid #c9c6ba;
+        padding-left: 1rem;
+        color: #55574f;
+        font-size: 0.86rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="status">Deployment configuration</p>
+      <h1>GitHub Pages setup required.</h1>
+      <p class="summary">
+        This repository contains an Eleventy site, but GitHub Pages is
+        publishing the source branch instead of the generated site.
+      </p>
+      <ol>
+        <li>
+          Open the repository on GitHub and go to
+          <strong>Settings → Pages</strong>.
+        </li>
+        <li>
+          Under <strong>Build and deployment</strong>, set
+          <strong>Source</strong> to <strong>GitHub Actions</strong>.
+        </li>
+        <li>
+          Run the <strong>Build and deploy GitHub Pages</strong> workflow on the
+          main branch.
+        </li>
+      </ol>
+      <p class="note">
+        The published academic homepage will replace this diagnostic page after
+        the workflow succeeds. See the
+        <a
+          href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site"
+          >GitHub Pages publishing guide</a
+        >
+        for detailed instructions.
+      </p>
+    </main>
+  </body>
+</html>

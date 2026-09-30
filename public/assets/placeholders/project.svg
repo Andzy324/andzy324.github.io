@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
+  <title id="title">Abstract perspective project illustration</title>
+  <rect width="1280" height="720" fill="#1b272b"/>
+  <circle cx="640" cy="330" r="18" fill="#f2c14e"/>
+  <g fill="none" stroke="#8ca1a5" stroke-width="7"><path d="M90 90 640 330 90 630ZM1190 90 640 330l550 300Z"/><rect x="450" y="240" width="380" height="240"/></g>
+  <path d="M450 480 640 330l190 150" fill="#d69f3c" opacity=".65"/>
+</svg>

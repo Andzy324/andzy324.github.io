@@ -1,0 +1,24 @@
+<section class="home-section home-section--news section-table" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+  <div class="section-cell">
+    <div class="news-panel">
+      <div class="home-section__header news-panel-head"><h2 class="semantic-heading section-heading type-section-title" id="{{ section.id }}-title">{{ section.title }}</h2></div>
+      <div class="news-scroll" role="region" aria-label="News updates" tabindex="0">
+        <div class="news-list">
+          {% for item in section.content %}
+            {% if loop.index <= 3 %}<article class="news-item"><time class="news-date type-meta">{{ item.date }}</time><p class="news-body type-body">{{ item.body | safe }}</p></article>{% endif %}
+          {% endfor %}
+        </div>
+        {% if section.content.length > 3 %}
+          <details id="old-news" class="news-archive" open>
+            <summary class="news-toggle type-control">{{ site.labels.moreNews }}</summary>
+            <div class="news-list news-list-archived">
+              {% for item in section.content %}
+                {% if loop.index > 3 %}<article class="news-item"><time class="news-date type-meta">{{ item.date }}</time><p class="news-body type-body">{{ item.body | safe }}</p></article>{% endif %}
+              {% endfor %}
+            </div>
+          </details>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

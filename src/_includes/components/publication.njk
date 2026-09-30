@@ -1,0 +1,59 @@
+{% import "components/ui.njk" as ui with context %}
+<article class="home-entry home-entry--publication section-table experience-entry publication-entry" id="{{ publication.id }}">
+  <div class="entry-media-cell">
+    <div class="entry-visual-stack">
+      <div class="entry-visual">{{ ui.image(publication.media, false, "teaser-img") }}</div>
+    </div>
+    <div class="entry-media-tags">{{ ui.researchTag(publication.area, researchAreas) }}</div>
+  </div>
+  <div class="entry-content-cell">
+    <div class="publication-title-stack">
+      <h3 class="entry-title type-entry-title">{{ publication.title }}</h3>
+      <div class="publication-meta-row {{ 'publication-meta-row-inline' if publication.award }}">
+        <span class="entry-meta type-meta type-meta--uppercase">{{ publication.venue }}, {{ publication.year }}</span>
+        {% if publication.award %}
+          <span class="entry-side-note publication-award type-caption"><a href="{{ publication.award.url }}">{{ publication.award.label }}</a></span>
+        {% endif %}
+        {{ ui.resourceLinks(publication.links, site, publication.title + " resources") }}
+      </div>
+    </div>
+    <div class="entry-block">
+      {{ ui.entryGroupLabel("Authors") }}
+      {% if publication.shortAuthors %}<div class="entry-byline type-secondary">{{ publication.shortAuthors | safe }}</div>{% else %}{{ ui.authors(publication.authors) }}{% endif %}
+    </div>
+    <div class="entry-block">
+      {{ ui.entryGroupLabel("Overview") }}
+      <p class="entry-summary type-body">{{ publication.summary }}</p>
+    </div>
+    {% if publication.collaborators and publication.collaborators.length %}<div class="collab-section">
+      <h4 class="collab-heading type-group-label">Collaborators</h4>
+      <div class="collab-list">
+        {% for collaborator in publication.collaborators %}
+          <div class="collab-row type-secondary">
+            <span class="collab-name">
+              {% for person in collaborator.people %}
+                {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if not loop.last %}, {% endif %}
+              {% endfor %}
+            </span>
+            <span class="collab-org">{{ collaborator.organization }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>{% endif %}
+    {% if publication.mentors and publication.mentors.length %}<div class="collab-section">
+      <h4 class="collab-heading type-group-label">Mentors</h4>
+      <div class="collab-list">
+        {% for mentor in publication.mentors %}
+          <div class="collab-row type-secondary">
+            <span class="collab-name">
+              {% for person in mentor.people %}
+                {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if not loop.last %}, {% endif %}
+              {% endfor %}
+            </span>
+            <span class="collab-org">{{ mentor.organization }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>{% endif %}
+  </div>
+</article>

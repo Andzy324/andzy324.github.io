@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="180" viewBox="0 0 400 180" role="img" aria-labelledby="title">
+  <title id="title">Example institution logo</title>
+  <rect width="400" height="180" rx="20" fill="#eef0ea"/>
+  <path d="m70 118 45-76 45 76h-25l-9-18H99l-9 18Z" fill="#253238"/>
+  <text x="185" y="82" font-family="Georgia,serif" font-size="24" fill="#253238">EXAMPLE</text>
+  <text x="185" y="111" font-family="sans-serif" font-size="17" letter-spacing="3" fill="#68777b">INSTITUTE</text>
+</svg>

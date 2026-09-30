@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
+  <title id="title">Abstract research pipeline</title>
+  <rect width="1280" height="720" fill="#f0eee7"/>
+  <g fill="#253238"><rect x="90" y="255" width="250" height="210" rx="24"/><rect x="515" y="255" width="250" height="210" rx="24"/><rect x="940" y="255" width="250" height="210" rx="24"/></g>
+  <g stroke="#d69f3c" stroke-width="22"><path d="M340 360h175M765 360h175"/></g>
+  <g fill="#f4efe2" font-family="sans-serif" font-size="30" text-anchor="middle"><text x="215" y="370">DATA</text><text x="640" y="370">MODEL</text><text x="1065" y="370">AUDIT</text></g>
+</svg>

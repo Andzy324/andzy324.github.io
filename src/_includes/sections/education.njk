@@ -1,0 +1,5 @@
+{% import "components/ui.njk" as ui with context %}
+<section class="home-section home-section--education" id="{{ section.id }}" aria-labelledby="{{ section.id }}-title">
+  {{ ui.sectionHeading(section.id + "-title", section.title) }}
+  {% for item in section.content %}{% include "components/education.njk" %}{% endfor %}
+</section>

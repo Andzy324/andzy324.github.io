@@ -1,0 +1,9 @@
+---
+layout: base.njk
+permalink: /index.html
+---
+{% for section in homepage.sections %}
+  {% if section.enabled and section.hasContent %}
+    {% include section.template %}
+  {% endif %}
+{% endfor %}

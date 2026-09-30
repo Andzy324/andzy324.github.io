@@ -1,0 +1,20 @@
+@import url("./tokens.css");
+@import url("./typography.css");
+@import url("./foundation/base.css");
+@import url("./layout.css");
+@import url("./components/navigation.css");
+@import url("./components/entries.css");
+@import url("./components/timeline-avatar.css");
+@import url("./sections/homepage.css");
+@import url("./features/liquid-glass.css");
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

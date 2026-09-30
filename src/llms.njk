@@ -1,0 +1,49 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.owner.name }}
+
+> {{ site.description }}
+
+Canonical profile: {{ site.url }}/
+
+## Research areas
+{% if homepage.enabled.research %}
+{% for area in researchAreas %}
+- {{ area.label }}
+{% endfor %}
+{% endif %}
+
+## Selected publications
+{% if homepage.enabled.publications %}
+{% for publication in publications %}
+- {{ publication.title }} — {{ publication.venue }}, {{ publication.year }}
+  {{ publication.summary }}
+  {% for link in publication.links %}{{ link.label }}: {{ link.url }}
+  {% endfor %}
+{% endfor %}
+{% endif %}
+
+## Experiences
+{% if homepage.enabled.experiences %}
+{% for experience in experiences %}
+- {{ experience.title }} — {{ experience.type }}, {{ experience.date }}
+  {% for contribution in experience.contributions %}{{ contribution | striptags | safe }} {% endfor %}
+{% endfor %}
+{% endif %}
+
+## Projects
+{% if homepage.enabled.projects %}
+{% for project in projects %}
+- {{ project.title }} — {{ project.focus }}
+  {{ project.summary | striptags | safe }}
+  {% for link in project.links %}{{ link.label }}: {{ link.url }}
+  {% endfor %}
+{% endfor %}
+{% endif %}
+
+## Other pages
+{% for project in projectPages %}
+- {{ project.title }}: {{ ('/projects/' + project.id + '/') | absoluteUrl(site.url) }}
+{% endfor %}

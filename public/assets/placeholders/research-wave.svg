@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
+  <title id="title">Abstract generative modeling wave</title>
+  <rect width="1280" height="720" fill="#e8e1d1"/>
+  <path d="M0 470c180-190 310 170 520-30s360 150 760-120v400H0Z" fill="#314b52"/>
+  <path d="M0 390c210-170 390 150 610-50s390 120 670-110" fill="none" stroke="#d69f3c" stroke-width="34"/>
+  <path d="M0 280c180-110 330 80 520-20s420 70 760-80" fill="none" stroke="#68777b" stroke-width="12"/>
+</svg>
