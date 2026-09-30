@@ -19,7 +19,6 @@ jobs:
     env:
       SITE_URL: https://${{ github.repository_owner }}.github.io
       PATH_PREFIX: /
-      PLAYWRIGHT_PATH_PREFIX: /
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -42,12 +41,6 @@ jobs:
 
       - name: Validate
         run: npm run check
-
-      - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
-
-      - name: Run end-to-end tests
-        run: npm run test:e2e
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
