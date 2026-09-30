@@ -326,23 +326,10 @@ ul, li {
   letter-spacing: -0.025em;
 }
 
-.hero-name-english em {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 400;
-}
-
-.hero-name-divider {
-  align-self: center;
-  width: 1px;
-  height: 0.9em;
-  background: #b1c3d3;
-}
-
 .hero-name-chinese {
-  color: #3e6487;
-  font-size: 0.72em;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 @media (min-width: 901px) {
