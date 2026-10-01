@@ -1,6 +1,6 @@
 export default [
   {
-    id: 'agile-robots', title: 'Video World Models for Dexterous Manipulation', date: 'Jun 2026 – Present',
+    id: 'agile-robots', title: 'Contact-Aware Video World Models for Dexterous Manipulation', date: 'Jun 2026 – Present',
     type: 'Research Intern · WRD Team, Agile Robots SE', area: 'generation',
     logos: [{ src: '/assets/logos/agile-robots.svg', width: 1024, height: 168, alt: 'Agile Robots logo' }, { src: '/assets/logos/agile-wrd.png', width: 434, height: 156, alt: 'Agile WRD logo', className: 'logo-wrd' }],
     mentors: [{ people: [{ name: 'Mahdi Mustapha Hamad', url: 'https://scholar.google.com/citations?hl=en&user=snIHZzcAAAAJ' }], organization: 'Tech Lead, Robot Learning Applications · Agile Robots SE' }],
@@ -20,7 +20,7 @@ export default [
     ]
   },
   {
-    id: 'camp-research', title: 'Open-World Object Pose & Canonicalization', date: 'Oct 2025 – Mar 2026',
+    id: 'camp-research', title: 'Open-World 6D Pose & Object Canonicalization', date: 'Oct 2025 – Mar 2026',
     type: 'Research Collaboration · TUM CAMP', area: 'perception',
     logos: [{ src: '/assets/logos/tum-camp.png', width: 774, height: 435, alt: 'TUM CAMP logo' }],
     mentors: [
@@ -45,7 +45,7 @@ export default [
     contributions: ['Curated category-level 3D assets and pose-canonicalized models for <a href="#funcanon">FUNCanon</a>.', 'Organized a functional taxonomy and built affordance visualizations for qualitative analysis.']
   },
   {
-    id: 'video-captioning', title: 'Video Captioning via Reinforcement Learning', date: 'Nov 2024 – Jun 2025',
+    id: 'video-captioning', title: 'Highlight-Aware Video Captioning via Reinforcement Learning', date: 'Nov 2024 – Jun 2025',
     type: 'Guided Research · Tresp Lab, LMU Munich', area: 'generation',
     logos: [{ src: '/assets/logos/tresp-lab.png', width: 464, height: 480, alt: 'TRESP Lab logo', label: 'TRESP Lab' }, { src: '/assets/logos/lmu.svg', width: 760, height: 398, alt: 'LMU Munich logo' }],
     mentors: [{ people: [{ name: 'Ruotong Liao', url: 'https://mayhugotong.github.io/' }], organization: 'PhD Researcher · TRESP Lab, LMU Munich' }],
