@@ -4,11 +4,6 @@
   --entry-media-aspect-ratio: 16 / 10;
 }
 
-.home-section--publications,
-.home-section--projects {
-  --entry-media-aspect-ratio: 11 / 7;
-}
-
 .home-section__header {
   display: block;
 }
