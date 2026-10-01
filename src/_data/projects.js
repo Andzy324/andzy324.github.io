@@ -3,7 +3,7 @@ export default [
     id: 'ov-nocs', title: 'OV-NOCs / LUNAR: Learning Unified NOCs and Shape Representation', date: 'Oct 2025 – Mar 2026',
     focus: 'Universal pose conventions and shape representations across open-vocabulary object categories, backed by a scalable canonicalization and annotation pipeline.', area: 'representation',
     summary: 'The project aims to bring uncategorized 3D models, category-level pose datasets, object-centric datasets, and scene datasets into a consistent canonical coordinate space. I worked on 3D asset preparation and the annotation pipeline for the large-scale canonicalized dataset at TUM CAMP.',
-    media: { src: '/assets/logos/tum-camp.png', width: 774, height: 435, alt: 'TUM CAMP logo' },
+    media: { src: '/assets/projects/ov-nocs-canonicalization.png', width: 1475, height: 617, alt: 'OV-NOCs canonicalization pipeline for 3D models, category-level pose datasets, object-centric datasets, and scene datasets' },
     links: [],
     collaborators: [{ people: [{ name: 'Hongli Xu' }], organization: 'TUM CAMP' }],
     mentors: [{ people: [{ name: 'Junwen Huang', url: 'https://demianhj.github.io/' }, { name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }, { name: 'Benjamin Busam', url: 'https://www.professoren.tum.de/busam-benjamin' }], organization: 'TUM CAMP' }]

@@ -87,12 +87,8 @@ body {
   display: block;
   max-width: 720px;
 }
-.project-entry .entry-visual-stack {
-  width: 100%;
-  max-width: 280px;
-}
 .publication-entry .entry-visual-stack,
-#video-captioning-project .entry-visual-stack {
+.project-entry .entry-visual-stack {
   width: min(100%, 330px);
   max-width: 330px;
 }
@@ -190,7 +186,7 @@ body {
   display: grid;
   gap: 16px;
   width: min(100%, 220px);
-  margin: 0 auto;
+  margin: 0;
   justify-items: center;
 }
 .entry-visual {
@@ -496,10 +492,15 @@ body {
   }
 
   .experience-logo-stack,
-  .entry-visual-stack,
-  .project-entry .entry-visual-stack {
+  .entry-visual-stack {
     width: min(100%, 260px);
     max-width: 260px;
+  }
+
+  .publication-entry .entry-visual-stack,
+  .project-entry .entry-visual-stack {
+    width: min(100%, 330px);
+    max-width: 330px;
   }
 
   .career-entry .experience-logo-stack {

@@ -4,11 +4,8 @@
   --entry-media-aspect-ratio: 16 / 10;
 }
 
-.home-section--publications {
-  --entry-media-aspect-ratio: 4 / 3;
-}
-
-#video-captioning-project {
+.home-section--publications,
+.home-section--projects {
   --entry-media-aspect-ratio: 4 / 3;
 }
 
