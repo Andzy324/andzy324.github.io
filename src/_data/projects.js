@@ -12,7 +12,7 @@ export default [
     ]
   },
   {
-    id: 'video-captioning-project', title: 'Highlight-Aware Video Captioning via Reinforcement Learning', date: 'Nov 2024 – Jun 2025',
+    id: 'video-captioning-project', title: 'Enhancing Video Captioning via Reinforcement Learning', date: 'Nov 2024 – Jun 2025',
     focus: 'Highlight-aware video captioning · Guided Research at TRESP Lab, LMU Munich', area: 'generation',
     summary: 'Developed a GRPO training framework that rewards video captions for temporal alignment, linguistic fidelity, and brevity. The temporal reward combines moment retrieval and highlight detection signals from UVCOM/Lighthouse-style predictors; the report compares clause-level reward aggregation and DAPO on QVHighlights, with preliminary TVSum experiments.',
     media: { src: '/assets/projects/video-captioning-pipeline.webp', width: 1702, height: 652, alt: 'Training pipeline from my guided research report: video and prompt, candidate captions, temporal and linguistic rewards, and GRPO or DAPO updates' },
