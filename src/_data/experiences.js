@@ -9,7 +9,7 @@ export default [
   {
     id: 'tum-masters-thesis', title: 'Interactive World Models for Understanding and Manipulating Articulated Objects', date: 'Ongoing · due Mar 2027',
     type: 'Master’s Thesis · TUM Computer Vision Group', area: 'generation',
-    logos: [{ src: '/assets/logos/tum-cvg.png', width: 720, height: 121, alt: 'TUM Computer Vision Group mark' }, { src: '/assets/logos/tum.svg', width: 408, height: 212, alt: 'Technical University of Munich logo' }],
+    logos: [{ src: '/assets/logos/tum-cvg.png', width: 720, height: 121, alt: 'TUM Computer Vision Group banner' }, { src: '/assets/logos/tum-wordmark.png', width: 7292, height: 2458, alt: 'Technical University of Munich wordmark' }],
     mentors: [{ people: [{ name: 'Xi Wang', url: 'https://xiwang1212.github.io/homepage/' }, { name: 'Daniel Cremers', url: 'https://cvg.cit.tum.de/members/cremers' }], organization: 'TUM Computer Vision Group' }],
     contributions: [
       'Investigating how scene-level world models can support controllable interaction with articulated objects through object-level articulation reasoning and interaction video generation.',

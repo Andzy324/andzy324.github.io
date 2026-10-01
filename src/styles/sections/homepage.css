@@ -513,6 +513,12 @@ ul, li {
 .education-entry .experience-logo-card {
   height: 92px;
 }
+#tum-masters-thesis .experience-logo-card:first-child {
+  height: 50px;
+}
+#funcanon-research .experience-logo-card:first-child {
+  height: 120px;
+}
 .experience-logo-card--labeled {
   gap: 12px;
   aspect-ratio: auto;
