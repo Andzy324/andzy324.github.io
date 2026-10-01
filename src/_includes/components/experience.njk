@@ -23,21 +23,6 @@
         {% for contribution in experience.contributions %}<li>{{ contribution | safe }}</li>{% endfor %}
       </ul>
     </div>
-    {% if experience.collaborators and experience.collaborators.length %}<div class="collab-section">
-      <h4 class="collab-heading type-group-label">Collaborators</h4>
-      <div class="collab-list">
-        {% for collaborator in experience.collaborators %}
-          <div class="collab-row type-secondary">
-            <span class="collab-name">
-              {% for person in collaborator.people %}
-                {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if not loop.last %}, {% endif %}
-              {% endfor %}
-            </span>
-            <span class="collab-org">{{ collaborator.organization }}</span>
-          </div>
-        {% endfor %}
-      </div>
-    </div>{% endif %}
     {% if experience.mentors.length %}<div class="collab-section">
       <h4 class="collab-heading type-group-label">Mentors</h4>
       <div class="collab-list">

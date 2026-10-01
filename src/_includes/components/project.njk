@@ -12,21 +12,6 @@
     {% if project.links.length %}<div class="split-row experience-detail-row">{{ ui.resourceLinks(project.links, site, project.title + " resources") }}</div>{% endif %}
     <div class="entry-block">{{ ui.entryGroupLabel("Focus") }}<p class="entry-summary type-body">{{ project.focus }}</p></div>
     <div class="entry-block">{{ ui.entryGroupLabel("Overview") }}<p class="entry-summary type-body">{{ project.summary | safe }}</p></div>
-    {% if project.collaborators %}<div class="collab-section">
-      <h4 class="collab-heading type-group-label">Collaborators</h4>
-      <div class="collab-list">
-        {% for collaborator in project.collaborators %}
-          <div class="collab-row type-secondary">
-            <span class="collab-name">
-              {% for person in collaborator.people %}
-                {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if not loop.last %}, {% endif %}
-              {% endfor %}
-            </span>
-            <span class="collab-org">{{ collaborator.organization }}</span>
-          </div>
-        {% endfor %}
-      </div>
-    </div>{% endif %}
     {% if project.mentors and project.mentors.length %}<div class="collab-section">
       <h4 class="collab-heading type-group-label">Mentors</h4>
       <div class="collab-list">

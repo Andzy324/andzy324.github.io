@@ -609,7 +609,7 @@ ul, li {
   color: #5d7083;
 }
 .collab-name a {
-  color: inherit;
+  color: var(--color-link);
 }
 .collab-org {
   color: #8a98a7;
