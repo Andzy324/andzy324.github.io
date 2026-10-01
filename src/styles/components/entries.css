@@ -89,14 +89,15 @@ body {
 }
 .publication-entry .entry-visual-stack,
 .project-entry .entry-visual-stack {
-  width: min(100%, 330px);
-  max-width: 330px;
+  width: min(100%, 220px);
+  max-width: 220px;
+  margin-inline: auto;
 }
 .project-entry .entry-visual img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
   object-position: center center;
 }
 .project-title-stack {
@@ -200,15 +201,13 @@ body {
   overflow: hidden;
 }
 .experience-logo-card {
-  aspect-ratio: var(--entry-media-aspect-ratio, 16 / 10);
-  height: auto;
-  min-height: 0;
+  aspect-ratio: auto;
 }
 .publication-entry .entry-visual img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
   object-position: center center;
 }
 .publication-entry .entry-visual {
@@ -467,7 +466,7 @@ body {
     border-top: 1px solid #dfe6ec;
   }
 
-  .experience-entry .entry-media-cell {
+  .home-section .experience-entry .entry-media-cell {
     padding: 6px 0 12px;
     border-bottom: 0;
   }
@@ -477,7 +476,7 @@ body {
     text-align: left;
   }
 
-  .experience-entry .entry-content-cell {
+  .home-section .experience-entry .entry-content-cell {
     padding: 12px 0 18px;
     border-left: 0;
   }
@@ -499,8 +498,8 @@ body {
 
   .publication-entry .entry-visual-stack,
   .project-entry .entry-visual-stack {
-    width: min(100%, 330px);
-    max-width: 330px;
+    width: min(100%, 220px);
+    max-width: 220px;
   }
 
   .career-entry .experience-logo-stack {

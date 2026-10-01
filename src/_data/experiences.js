@@ -2,7 +2,7 @@ export default [
   {
     id: 'agile-robots', title: 'World Models for Robotics & Dexterous Manipulation', date: 'Jun 2026 – Present',
     type: 'Research Intern · WRD Team, Agile Robots SE', area: 'generation',
-    logos: [{ src: '/assets/logos/agile-robots.svg', width: 1024, height: 168, alt: 'Agile Robots logo' }, { src: '/assets/logos/agile-wrd.png', width: 434, height: 156, alt: 'Agile WRD logo' }],
+    logos: [{ src: '/assets/logos/agile-robots.svg', width: 1024, height: 168, alt: 'Agile Robots logo' }, { src: '/assets/logos/agile-wrd.png', width: 434, height: 156, alt: 'Agile WRD logo', className: 'logo-wrd' }],
     mentors: [{ people: [{ name: 'Mahdi Mustapha Hamad', url: 'https://scholar.google.com/citations?hl=en&user=snIHZzcAAAAJ' }], organization: 'Agile Robots SE · WRD Team' }],
     contributions: ['Developing contact-aware video generation and world action models for contact-rich robotic manipulation.', 'Investigating 3D motion and contact representations for physically consistent interaction prediction.']
   },

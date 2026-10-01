@@ -55,7 +55,7 @@
 
 .experience-entry {
   display: grid;
-  grid-template-columns: minmax(0, 34fr) minmax(0, 66fr);
+  grid-template-columns: minmax(0, 26fr) minmax(0, 74fr);
   width: 100%;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .award-entry {
-  grid-template-columns: minmax(0, 34fr) minmax(0, 66fr);
+  grid-template-columns: minmax(0, 26fr) minmax(0, 74fr);
 }
 
 .footer-table {
