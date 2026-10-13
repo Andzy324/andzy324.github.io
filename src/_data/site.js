@@ -20,9 +20,9 @@ export default {
     alternateNames: ["钟伯扬"],
     email: "boyang.zhong@tum.de",
     portrait: {
-      src: "/assets/profile-linkedin.png",
-      width: 800,
-      height: 800,
+      src: "/assets/profile-2026.webp",
+      width: 400,
+      height: 400,
       alt: "Portrait of Boyang Zhong",
     },
   },
