@@ -45,7 +45,7 @@
     "@playwright/test": "1.62.0",
     "ajv": "8.20.0",
     "esbuild": "0.28.1",
-    "eslint": "10.8.0",
+    "eslint": "10.11.0",
     "html-validate": "11.6.0",
     "prettier": "3.9.6",
     "sharp": "^0.35.3",
