@@ -4,7 +4,7 @@ export default [
     focus: 'Universal pose conventions and shape representations across open-vocabulary object categories, backed by a scalable canonicalization and annotation pipeline.', area: 'representation',
     summary: 'The project aims to bring uncategorized 3D models, category-level pose datasets, object-centric datasets, and scene datasets into a consistent canonical coordinate space. I worked on 3D asset preparation and the annotation pipeline for the large-scale canonicalized dataset at TUM CAMP.',
     media: { src: '/assets/projects/ov-nocs-canonicalization.png', width: 1475, height: 617, alt: 'OV-NOCs canonicalization pipeline for 3D models, category-level pose datasets, object-centric datasets, and scene datasets' },
-    links: [],
+    links: [{ type: 'project', url: 'https://andzy324.github.io/ov-nocs/', label: 'Visit the OV-NOCs project website', external: true }],
     mentors: [
       { people: [{ name: 'Junwen Huang', url: 'https://demianhj.github.io/' }], organization: 'PhD Candidate · TUM CAMP' },
       { people: [{ name: 'Slobodan Ilic', url: 'https://www.cs.cit.tum.de/camp/members/senior-affiliates/slobodan-ilic/' }], organization: 'Adjunct Professor · TUM CAMP; Senior Research Scientist · Siemens' },
