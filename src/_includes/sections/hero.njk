@@ -33,21 +33,14 @@
             {% endif %}
           {% endfor %}
         </div>
-        <div class="visitor-map" id="visitor-map" data-globe-url="{{ '/visitor-globe.html' | sitePath }}?v=2">
-          <button class="visitor-map-preview" type="button" aria-haspopup="dialog" aria-controls="visitor-map-dialog">
+        <div class="visitor-map" id="visitor-map">
+          <a class="visitor-map-preview" href="https://mapmyvisitors.com/web/1c9fa" target="_blank" rel="noopener noreferrer" aria-label="View full visitor statistics">
             <img src="https://mapmyvisitors.com/map.png?d=wNQqWNXP-9C92tGULdCSiSUycJz8EZmJtM_Tfntd_Zs&amp;cl=ffffff&amp;w=260" alt="Live map of visitor locations" width="260" height="149">
-            <span>Explore visitor globe <span aria-hidden="true">↗</span></span>
-          </button>
+            <span>Visitor statistics <span aria-hidden="true">↗</span></span>
+          </a>
           <p class="type-meta">Your IP is shared with <a href="https://mapmyvisitors.com/b/policy" target="_blank" rel="noopener noreferrer">MapMyVisitors</a>.</p>
         </div>
       </div>
     </div>
   </div>
-  <dialog class="visitor-map-dialog" id="visitor-map-dialog" aria-labelledby="visitor-map-title">
-    <form method="dialog"><button class="visitor-map-close" type="submit" aria-label="Close visitor globe">×</button></form>
-    <h2 id="visitor-map-title">Visitor globe</h2>
-    <p class="visitor-globe-hint">Drag sideways to turn · Visitor locations in full statistics</p>
-    <div class="visitor-globe-live" id="visitor-globe-live" role="status">Loading visitor globe…</div>
-    <a class="visitor-map-stats" href="https://mapmyvisitors.com/web/1c9fa" target="_blank" rel="noopener noreferrer">View full visitor statistics ↗</a>
-  </dialog>
 </section>
