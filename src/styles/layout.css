@@ -161,8 +161,9 @@
 
 .visitor-globe-live iframe {
   display: block;
-  width: 100%;
-  height: min(490px, 90vw);
+  width: min(100%, 400px);
+  height: min(430px, 58vh);
+  margin: 0 auto;
   border: 0;
 }
 
