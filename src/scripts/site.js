@@ -19,7 +19,7 @@ Site.ready(function () {
         image.alt = "Live map of visitor locations";
         image.addEventListener("load", () => live.replaceChildren(image), { once: true });
         image.addEventListener("error", () => { live.textContent = "Map unavailable. Please try again later."; }, { once: true });
-        image.src = `https://mapmyvisitors.com/map.png?d=${encodeURIComponent(map.dataset.widgetKey)}&cl=ffffff`;
+        image.src = `https://mapmyvisitors.com/map.png?d=${encodeURIComponent(map.dataset.widgetKey)}&cl=ffffff&w=470`;
       }
     });
   }
