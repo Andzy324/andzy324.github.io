@@ -135,36 +135,11 @@
   cursor: pointer;
 }
 
-.visitor-map-views {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 12px 0 18px;
-}
-
-.visitor-map-views button {
-  padding: 6px 16px;
-  color: #2a6fbb;
-  background: #fff;
-  border: 1px solid #cbdce9;
-  border-radius: 999px;
-  cursor: pointer;
-}
-
-.visitor-map-views button[aria-pressed="true"] {
-  background: #eaf3fa;
-  border-color: #2a6fbb;
-}
-
 .visitor-map-live img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto 16px;
-}
-
-.visitor-globe-live {
-  min-height: 200px;
 }
 
 .visitor-map p {

@@ -20,7 +20,7 @@
         <div class="hero-media-row">
           <figure class="profile-portrait">{{ ui.image(site.owner.portrait, true, "profile-portrait-image") }}</figure>
         </div>
-        <div class="visitor-map" id="visitor-map" data-widget-key="wNQqWNXP-9C92tGULdCSiSUycJz8EZmJtM_Tfntd_Zs" data-globe-key="ANJjnmIh8SVGUbaZgnsMoENE2_k5Tvlh6dDPcSVGNRc">
+        <div class="visitor-map" id="visitor-map" data-widget-key="wNQqWNXP-9C92tGULdCSiSUycJz8EZmJtM_Tfntd_Zs">
           <button class="visitor-map-preview" type="button" aria-haspopup="dialog" aria-controls="visitor-map-dialog">
             <img src="{{ '/assets/misc/visitor-map-preview.svg' | sitePath }}" alt="Illustrated world map preview" width="220" height="120">
             <span>Visitor map <span aria-hidden="true">↗</span></span>
@@ -46,12 +46,7 @@
   <dialog class="visitor-map-dialog" id="visitor-map-dialog" aria-labelledby="visitor-map-title">
     <form method="dialog"><button class="visitor-map-close" type="submit" aria-label="Close visitor map">×</button></form>
     <h2 id="visitor-map-title">Visitor map</h2>
-    <div class="visitor-map-views" role="group" aria-label="Visitor map view">
-      <button type="button" data-view="map" aria-pressed="true">Map</button>
-      <button type="button" data-view="globe" aria-pressed="false">Globe</button>
-    </div>
     <div class="visitor-map-live" id="visitor-map-live" role="status">Loading visitor map…</div>
-    <div class="visitor-globe-live" id="visitor-globe-live" hidden></div>
     <a class="visitor-map-stats" href="https://mapmyvisitors.com/web/1c9fa" target="_blank" rel="noopener noreferrer">View full visitor statistics ↗</a>
   </dialog>
 </section>
