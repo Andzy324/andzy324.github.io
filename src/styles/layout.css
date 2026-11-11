@@ -86,13 +86,13 @@
 
 .visitor-map-preview {
   display: block;
-  width: 100%;
+  width: min(100%, 200px);
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  color: #2a6fbb;
-  background: #fff;
-  border: 1px solid #cbdce9;
-  border-radius: 12px;
+  color: #597b9c;
+  background: transparent;
+  border: 0;
   cursor: pointer;
 }
 
@@ -100,17 +100,20 @@
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  filter: saturate(0.72);
 }
 
 .visitor-map-preview > span {
   display: block;
-  padding: 6px;
-  font-weight: 700;
+  padding: 4px 0 0;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .visitor-map-preview:hover,
 .visitor-map-preview:focus-visible {
-  border-color: #2a6fbb;
+  color: #2a6fbb;
 }
 
 .visitor-map-dialog {
