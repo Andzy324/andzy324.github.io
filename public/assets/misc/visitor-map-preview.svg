@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" role="img" aria-label="Illustrated world map preview">
+  <rect width="220" height="120" rx="12" fill="#eaf3fa"/>
+  <path d="M24 25 37 16 51 18 60 26 69 25 74 31 66 40 62 49 54 51 48 62 38 57 31 46 23 43 18 34Zm37 45 12-4 13 8 4 12-8 18-11 8-7-12-1-12-6-7Zm45-43 11-9 16 1 10 7 15-5 15 5 12 10-4 12-16 5-7 13-10-5-10 6-7-11-14-3-9-13Zm10 42 13-8 17 5 7 14-8 24-17 5-13-14-6-18Zm55 17 15-8 13 8 4 16-16 5-16-7Z" fill="#9cbad0"/>
+  <path d="M0 60h220M110 0v120" stroke="#d4e5f1" stroke-width="1" fill="none"/>
+</svg>

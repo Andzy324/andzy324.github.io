@@ -9,33 +9,31 @@ Site.ready(function () {
   Site.initSmoothScroll();
   Site.initSiteGlassNav?.();
   const map = document.getElementById("visitor-map");
-  map?.querySelector("button")?.addEventListener("click", function () {
-    const button = this;
-    button.disabled = true;
-    button.textContent = "Loading visitor map…";
-    window._wau = window._wau || [];
-    window._wau.push(["map", "4dpf4o0ka7", "nxt", "200", "100", "night", "cross-pink"]);
-    const widget = document.createElement("script");
-    widget.id = "_waunxt";
-    map.prepend(widget);
-    const loader = document.createElement("script");
-    loader.async = true;
-    loader.src = "https://waust.at/m.js";
-    const finish = () => {
-      const image = map.querySelector(":scope > span > img");
-      if (!image) return;
-      if (image.complete && image.naturalWidth) {
-        observer.disconnect();
-        window.clearTimeout(timeout);
-        button.remove();
-      } else {
-        image.addEventListener("load", finish, { once: true });
+  if (map) {
+    const dialog = document.getElementById("visitor-map-dialog");
+    const live = document.getElementById("visitor-map-live");
+    const globe = document.getElementById("visitor-globe-live");
+    const views = dialog.querySelectorAll("[data-view]");
+    const selectView = (view) => {
+      live.hidden = view !== "map";
+      globe.hidden = view !== "globe";
+      for (const button of views) button.setAttribute("aria-pressed", String(button.dataset.view === view));
+      if (view === "map" && !live.querySelector("img")) {
+        const image = document.createElement("img");
+        image.alt = "Live map of visitor locations";
+        image.addEventListener("load", () => live.replaceChildren(image), { once: true });
+        image.addEventListener("error", () => { live.textContent = "Map unavailable. Please try again later."; }, { once: true });
+        image.src = `https://mapmyvisitors.com/map.png?d=${encodeURIComponent(map.dataset.widgetKey)}&cl=ffffff`;
+      }
+      if (view === "globe" && !globe.querySelector("script")) {
+        const script = document.createElement("script");
+        script.id = "mmvst_globe";
+        script.src = `https://mapmyvisitors.com/globe.js?d=${encodeURIComponent(map.dataset.globeKey)}`;
+        script.addEventListener("error", () => { globe.textContent = "Globe unavailable. Please try again later."; }, { once: true });
+        globe.append(script);
       }
     };
-    const observer = new window.MutationObserver(finish);
-    observer.observe(map, { childList: true, subtree: true });
-    const timeout = window.setTimeout(() => { observer.disconnect(); if (button.isConnected) button.textContent = "Map unavailable; reload to retry"; }, 10000);
-    loader.addEventListener("error", () => { observer.disconnect(); window.clearTimeout(timeout); button.textContent = "Map unavailable; reload to retry"; });
-    map.append(loader);
-  });
+    map.querySelector("button").addEventListener("click", () => { dialog.showModal(); selectView("map"); });
+    for (const button of views) button.addEventListener("click", () => selectView(button.dataset.view));
+  }
 });
