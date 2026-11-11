@@ -78,8 +78,23 @@
 }
 
 .visitor-map {
-  padding: 20px 0 4px;
+  width: 100%;
+  max-width: 260px;
+  margin: 14px auto 0;
   text-align: center;
+}
+
+.visitor-map > span {
+  position: relative;
+  margin-right: 0 !important;
+}
+
+.visitor-map > span > img {
+  left: 0;
+}
+
+.visitor-map > span > span {
+  left: 0;
 }
 
 .visitor-map-button {

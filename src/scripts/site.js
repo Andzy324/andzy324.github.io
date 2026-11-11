@@ -12,7 +12,7 @@ Site.ready(function () {
   map?.querySelector("button")?.addEventListener("click", function () {
     this.remove();
     window._wau = window._wau || [];
-    window._wau.push(["map", "4dpf4o0ka7", "nxt", "250", "125", "night", "cross-pink"]);
+    window._wau.push(["map", "4dpf4o0ka7", "nxt", "200", "100", "night", "cross-pink"]);
     const widget = document.createElement("script");
     widget.id = "_waunxt";
     map.prepend(widget);
