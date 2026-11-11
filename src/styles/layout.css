@@ -138,25 +138,10 @@
   cursor: pointer;
 }
 
-.visitor-map-views {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 12px 0 18px;
-}
-
-.visitor-map-views button {
-  padding: 6px 16px;
-  color: #2a6fbb;
-  background: #fff;
-  border: 1px solid #cbdce9;
-  border-radius: 999px;
-  cursor: pointer;
-}
-
-.visitor-map-views button[aria-pressed="true"] {
-  background: #eaf3fa;
-  border-color: #2a6fbb;
+.visitor-globe-hint {
+  margin: 4px 0 12px;
+  color: #71869a;
+  font-size: 11px;
 }
 
 .visitor-globe-live iframe {
@@ -165,13 +150,6 @@
   height: min(430px, 58vh);
   margin: 0 auto;
   border: 0;
-}
-
-.visitor-map-live img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto 16px;
 }
 
 .visitor-map p {
