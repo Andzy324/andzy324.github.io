@@ -15,14 +15,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
+    runs-on: ubuntu-latest
     env:
       SITE_URL: https://andzy324.github.io
       PATH_PREFIX: /
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Check out source
         uses: actions/checkout@v6
@@ -50,12 +47,27 @@ jobs:
         with:
           path: _site
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Check out source for verification
+        uses: actions/checkout@v6
+
+      - name: Set up Node for verification
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22.22.0
 
       - name: Verify deployed homepage
         env:
           DEPLOYED_URL: ${{ steps.deployment.outputs.page_url }}
           PAGES_CHECK_ID: ${{ github.run_id }}-${{ github.run_attempt }}
-        run: npm run check:deployed
+        run: node scripts/check-pages-output.mjs --deployed
