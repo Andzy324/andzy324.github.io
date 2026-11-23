@@ -22,7 +22,7 @@ jobs:
       PATH_PREFIX: /
     steps:
       - name: Check out source
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Set up Node
         uses: actions/setup-node@v6
